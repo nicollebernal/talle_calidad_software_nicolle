@@ -1,0 +1,142 @@
+/* 🎽 Tema ASLAMGYM - colores base */
+:root {
+    --aslam-yellow: #fdd835;
+    --aslam-black: #111111;
+    --aslam-white: #ffffff;
+}
+
+
+/* 🎽 Fondo general con degradado oscuro */
+body {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #2b2b2b);
+    color: var(--aslam-white);
+    font-family: 'Figtree', sans-serif;
+    min-height: 100vh;
+}
+main, .container {
+    background-color: var(--aslam-white);
+    color: var(--aslam-black);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+}
+
+
+/* 🏋️‍♂️ Encabezados */
+h1, h2, h3 {
+    color: var(--aslam-black);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* 🧱 Contenedores */
+.container {
+    background-color: var(--aslam-white);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📦 Tarjetas / Formularios */
+form {
+    background-color: #fffbea;
+    border: 2px solid var(--aslam-yellow);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input, textarea {
+    border: 2px solid var(--aslam-black);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--aslam-yellow);
+    box-shadow: 0 0 8px var(--aslam-yellow);
+}
+
+/* ⚡ Botones */
+button, .btn, .bg-green-500 {
+    background-color: var(--aslam-yellow) !important;
+    color: var(--aslam-black) !important;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--aslam-black) !important;
+    color: var(--aslam-yellow) !important;
+}
+
+/* 🧭 Navbar */
+nav {
+    background-color: var(--aslam-black);
+    color: var(--aslam-yellow);
+}
+
+nav a {
+    color: var(--aslam-yellow);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--aslam-white);
+}
+
+/* 🗂️ Tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--aslam-white);
+    border: 2px solid var(--aslam-black);
+}
+
+th {
+    background-color: var(--aslam-black);
+    color: var(--aslam-yellow);
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid var(--aslam-black);
+}
+
+tr:hover {
+    background-color: #fff9c4;
+}
+.nuevo-btn {
+    display: inline-block; /* Permite definir ancho y alto */
+    background: #ffd700; /* Color dorado principal */
+    color: #111; /* Texto oscuro para contraste */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+    padding: 10px 16px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: 700; /* Texto en negrita */
+    font-size: 1rem; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    min-width: 140px; /* Ancho mínimo */
+    text-align: center; /* Centra el texto */
+    transition: all 0.25s ease-in-out; /* Transición suave */
+    cursor: pointer; /* Aparece la manito */
+}
+
+/* Efecto hover (al pasar el mouse) */
+.nuevo-btn:hover {
+    background: #ffea00; /* Un dorado un poco más claro */
+    transform: scale(1.05); /* Pequeño efecto de crecimiento */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4); /* Brillo suave */
+}
+
+/* Efecto al presionar */
+.nuevo-btn:active {
+    transform: scale(0.97); /* Pequeño efecto de clic */
+    background: #e6c200; /* Un dorado más oscuro */
+}
